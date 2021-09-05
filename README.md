@@ -12,9 +12,11 @@ Example:
 
     model_torch.py ./pytorchTestCases/ ./pytorchResults/
     
-### The model weights
+### The model weights (erika.pth)
 
-please refer to the release section of this repo.
+Please refer to the **release** section of this repo. Alternatively, you may use this link:
+
+    https://www.dropbox.com/s/y8pulix3zs73y62/erika.pth?dl=0
     
 ### Requirement
 
@@ -24,13 +26,19 @@ please refer to the release section of this repo.
 
 ### How the model is prepared
 
-The PyTorch weights are exactly the same as the theano(!) model. I take some efforts to convert the original weights to the new model. Moreover, the functional PyTorch interface allows easier fine-tuning of this model. You can also take the whole model as a sub-module for your own work (e.g., use the on-the-fly extraction of lines as a stuctural constraint).
+The PyTorch weights are exactly the same as the theano(!) model. I make some efforts to convert the original weights to the new model and ensure the overall error is less than 1e-3 over the image range from 0-255. 
+
+Moreover, the functional PyTorch interface allows easier fine-tuning of this model. You can also take the whole model as a sub-module for your own work (e.g., use the on-the-fly extraction of lines as a structural constraint).
 
 ### About model training
 
-I really don't want to admit, but the legacy code looks like some artworks by a two-year old. I will try my best to recover the code to py3 and share the screentone dataset. This won't take long so please stay tuned. 
+I really don't want to admit it, but the legacy code looks like some artworks by a two-years old. I will try my best to recover the code to py3 and share the screentone dataset. This won't take long, so please stay tuned. 
 
+### Go beyond manga
 
+Surprisingly, this model works quite well on color cartoons and other nijigen-like images. Simply load the image as grayscale(by default) and check out the results!
+
+![color comic processing](./assets/color.png)
 
 ### BibTeX:
 
@@ -47,6 +55,7 @@ I really don't want to admit, but the legacy code looks like some artworks by a 
 
 ### Credit:
 
-Wenliang Wu, who inspired me to port this great thing to PyTorch
-
++ Xueting Liu and Tien-Tsin Wong, who contributed this work
++ Wenliang Wu, who inspired me to port this great thing to PyTorch
++ Toda Erika, where the project name comes from
 
