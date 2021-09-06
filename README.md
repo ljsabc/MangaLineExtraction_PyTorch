@@ -4,7 +4,7 @@ The (Official) PyTorch Implementation of the paper ["Deep Extraction of Manga St
 ![teaser](./assets/teaser.png)
 
 
-### How to use this model
+### Usage
 
     model_torch.py [source folder] [output folder]
 
@@ -14,7 +14,7 @@ Example:
     
 ### The model weights (erika.pth)
 
-Please refer to the **release** section of this repo. Alternatively, you may use this link:
+Please refer to the **[release](https://github.com/ljsabc/MangaLineExtraction_PyTorch/releases)** section of this repo. Alternatively, you may use this link:
 
     https://www.dropbox.com/s/y8pulix3zs73y62/erika.pth?dl=0
     
@@ -39,6 +39,15 @@ I really don't want to admit it, but the legacy code looks like some artworks by
 Surprisingly, this model works quite well on color cartoons and other nijigen-like images. Simply load the image as grayscale(by default) and check out the results!
 
 ![color comic processing](./assets/color.png)
+
+### Gallery
+
+I'm glad to share some of the results of this model. Some of the images are copyrighted, I will list the original sources below the images. Feel free to share your creaions with me in the issues section.
+
+![](./assets/gallery1.png)
+[©IWAYUU](http://iwayu2.blog.fc2.com/blog-entry-9.html), from the fc2 blog.
+
+![](./assets/gallery2.png)
 
 ### BibTeX:
 
