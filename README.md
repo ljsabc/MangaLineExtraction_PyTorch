@@ -1,10 +1,12 @@
 # MangaLineExtraction_PyTorch
 The (Official) PyTorch Implementation of the paper ["Deep Extraction of Manga Structural Lines"](https://www.cse.cuhk.edu.hk/~ttwong/papers/linelearn/linelearn.html)
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ljsabc/MangaLineExtraction_PyTorch/blob/main/MangaLineExtraction.ipynb)
+
 ![teaser](./assets/teaser.png)
 
 
-### Usage
+### Usage 
 
     model_torch.py [source folder] [output folder]
 
