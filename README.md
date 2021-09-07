@@ -36,13 +36,13 @@ I really don't want to admit it, but the legacy code looks like some artworks by
 
 ### Go beyond manga
 
-Surprisingly, this model works quite well on color cartoons and other nijigen-like images. Simply load the image as grayscale(by default) and check out the results!
+Surprisingly, this model works quite well on color cartoons and other nijigen-like images, as long as they have clear hand-drawn lines. Simply load the image as grayscale(by default) and check out the results!
 
 ![color comic processing](./assets/color.png)
 
 ### Gallery
 
-I'm glad to share some of the results of this model. Some of the images are copyrighted, I will list the original sources below the images. Feel free to share your creaions with me in the issues section.
+I'm glad to share some model results. Some of the images are copyrighted and I will list the original source below. Feel free to share your creaions with me in the issues section.
 
 ![](./assets/gallery1.png)
 [©IWAYUU](http://iwayu2.blog.fc2.com/blog-entry-9.html), from the fc2 blog.
@@ -65,6 +65,6 @@ I'm glad to share some of the results of this model. Some of the images are copy
 ### Credit:
 
 + Xueting Liu and Tien-Tsin Wong, who contributed this work
-+ Wenliang Wu, who inspired me to port this great thing to PyTorch
++ Wenliang Wu and Ziheng Ma, who inspired me to port this great thing to PyTorch
 + Toda Erika, where the project name comes from
 
