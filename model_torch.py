@@ -10,7 +10,7 @@ import sys
 
 import numpy as np
 
-torch.set_printoptions(precision=10)
+#torch.set_printoptions(precision=10)
 
 
 class _bn_relu_conv(nn.Module):
@@ -60,12 +60,7 @@ class _shortcut(nn.Module):
         self.model = None
         if in_filters != nb_filters or subsample != 1:
             self.process = True
-            if subsample == 1:
-                self.model = nn.Sequential(
-                    nn.Conv2d(in_filters, nb_filters, (1, 1), stride=subsample, padding="same")
-                )
-            else:
-                self.model = nn.Sequential(
+            self.model = nn.Sequential(
                     nn.Conv2d(in_filters, nb_filters, (1, 1), stride=subsample)
                 )
 
