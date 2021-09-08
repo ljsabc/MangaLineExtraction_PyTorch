@@ -40,7 +40,8 @@ I really don't want to admit it, but the legacy code looks like some artworks by
 
 Surprisingly, this model works quite well on color cartoons and other nijigen-like images, as long as they have clear hand-drawn lines. Simply load the image as grayscale(by default) and check out the results!
 
-![color comic processing](./assets/color.png)
+![Visual comparison](./assets/comparison.png)
+From left to right: input, [sketchKeras](https://github.com/lllyasviel/sketchKeras), [Anime2Sketch](https://github.com/Mukosame/Anime2Sketch) (considered as SOTA), Ours.
 
 ### Gallery
 
