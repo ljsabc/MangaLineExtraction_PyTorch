@@ -1,7 +1,9 @@
 # MangaLineExtraction_PyTorch
 The (Official) PyTorch Implementation of the paper _[Deep Extraction of Manga Structural Lines](https://www.cse.cuhk.edu.hk/~ttwong/papers/linelearn/linelearn.html)_. This project aims to extract the structural lines from 2D manga, cartoons, and illustrations.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ljsabc/MangaLineExtraction_PyTorch/blob/main/MangaLineExtraction.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ljsabc/MangaLineExtraction_PyTorch/blob/main/MangaLineExtraction.ipynb) 
+
+Besides colab, There is also a gradio-like [web demo](https://moeka.me/mangaLine/). (i18n help needed!) 
 
 ![teaser](./assets/teaser.png)
 
