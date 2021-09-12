@@ -70,6 +70,6 @@ I'm glad to share some model results. Some of the images are copyrighted and I w
 ### Credit:
 
 + Xueting Liu and Tien-Tsin Wong, who contributed this work
-+ Wenliang Wu and Ziheng Ma, who inspired me to port this great thing to PyTorch
++ Wenliang Wu and Zheg Ma, who inspired me to port this great thing to PyTorch
 + Toda Erika, where the project name comes from
 
