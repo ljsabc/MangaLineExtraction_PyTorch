@@ -238,11 +238,13 @@ def loadImages(folder):
 if __name__ == "__main__":
     model = res_skip()
     model.load_state_dict(torch.load('erika.pth'))
-
-    model.cuda()
+    is_cuda = torch.cuda.is_available()
+    if is_cuda:
+        model.cuda()
+    else:
+        model.cpu()
     model.eval()
     
-
     filelists = loadImages(sys.argv[1])
 
     with torch.no_grad():
@@ -255,8 +257,11 @@ if __name__ == "__main__":
             # manually construct a batch. You can change it based on your usecases. 
             patch = np.ones((1,1,rows,cols),dtype="float32")
             patch[0,0,0:src.shape[0],0:src.shape[1]] = src
-
-            tensor = torch.from_numpy(patch).cuda()
+            
+            if is_cuda: 
+                tensor = torch.from_numpy(patch).cuda()
+            else:
+                tensor = torch.from_numpy(patch).cpu()
             y = model(tensor)
             print(imname, torch.max(y), torch.min(y))
 
@@ -266,8 +271,3 @@ if __name__ == "__main__":
 
             head, tail = os.path.split(imname)
             cv2.imwrite(sys.argv[2]+"/"+tail.replace(".jpg",".png"),yc[0:src.shape[0],0:src.shape[1]])
-
-
-
-
-
