@@ -36,7 +36,7 @@ Moreover, the functional PyTorch interface allows easier fine-tuning of this mod
 
 ### About model training
 
-I really don't want to admit it, but the legacy code looks like some artworks by a two-years old. I will try my best to recover the code to py3 and share the screentone dataset. This won't take long, so please stay tuned. 
+I really don't want to admit it, but the legacy code looks like some artworks by a two-years old. Please refer to #5 if you have any interest. 
 
 ### Go beyond manga
 
