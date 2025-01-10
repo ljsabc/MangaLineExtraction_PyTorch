@@ -18,7 +18,9 @@ Example:
     
 ### The model weights (erika.pth)
 
-Please refer to the **[release](https://github.com/ljsabc/MangaLineExtraction_PyTorch/releases)** section of this repo. Alternatively, you may use this link:
+You can always refer to the standardized [HuggingFace pipeline](https://huggingface.co/p1atdev/MangaLineExtraction-hf) to perform simple inferences. Thanks for the port and model quantization. 
+
+For manual weight download, please refer to the **[release](https://github.com/ljsabc/MangaLineExtraction_PyTorch/releases)** section of this repo. Alternatively, you may use this link:
 
     https://www.dropbox.com/s/y8pulix3zs73y62/erika.pth?dl=0
     
